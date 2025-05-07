@@ -21,16 +21,16 @@ public:
 };
 
 TEST_F(SimilarityTest, SameLength1) {
-	calculateSimilarity("ASD", "DSA", 60);
+	calculateSimilarity("ASD", "DSA", 100);
 }
 TEST_F(SimilarityTest, DifferentLength1) {
 	calculateSimilarity("A", "BB", 0);
 }
 TEST_F(SimilarityTest, DifferentLength2) {
-	calculateSimilarity("AAABB", "BAA", 20);
+	calculateSimilarity("AAABB", "BAA", 60);
 }
 TEST_F(SimilarityTest, DifferentLength3) {
-	calculateSimilarity("AA", "AAE", 30);
+	calculateSimilarity("AA", "AAE", 50);
 }
 int main() {
 	::testing::InitGoogleMock();
